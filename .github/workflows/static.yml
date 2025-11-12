@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rafi — Graphic Designer | Resume</title>
+  <style>
+    /* Quick, modern one-page resume layout — printable (A4) */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    :root{
+      --accent:#111827; /* charcoal */
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --primary:#0f172a;
+      --accent-2:#10b981;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--primary)}
+    .page{max-width:900px;margin:28px auto;padding:34px;border-radius:10px;box-shadow:0 8px 30px rgba(15,23,42,0.06);background:#fff}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent-2),#3b82f6);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    .meta{margin-left:auto;text-align:right}
+    .meta div{font-size:14px;color:var(--muted)}
+    .tagline{margin-top:8px;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:22px}
+    .card{padding:18px}
+    .section{margin-bottom:18px}
+    h2{font-size:16px;margin:0 0 10px 0;color:var(--accent)}
+    p{margin:0;color:var(--muted);line-height:1.45}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{background:#f3f4f6;padding:6px 10px;border-radius:999px;font-size:13px;color:#111827}
+    .experience-item{margin-bottom:12px}
+    .small{font-size:13px;color:var(--muted)}
+    .tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .download-cta{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    /* print styles */
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none;margin:0;border-radius:0}
+      a[href]:after{content:""}
+    }
+    /* responsive */
+    @media (max-width:760px){.grid{grid-template-columns:1fr;}.meta{text-align:left;margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="avatar">R</div>
+      <div>
+        <h1>Mohibul Rafi — Graphic Designer</h1>
+        <div class="tagline">T-shirt ● Social Media ● Logos — Adobe Illustrator specialist</div>
+      </div>
+      <div class="meta">
+        <div><strong>Chittagong, Bangladesh</strong></div>
+        <div class="small">Email: <em>your.email@example.com</em></div>
+        <div class="small">Portfolio: <em>your-portfolio-link.com</em></div>
+        <div class="small">Upwork: <em>upwork.com/fl/yourprofile</em></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Left (main) -->
+      <main class="card">
+        <section class="section">
+          <h2>About</h2>
+          <p>I’m <strong>Rafi</strong>, an 18‑year‑old graphic designer from Bangladesh with 3 years of focused practice in T‑shirt design, social media visuals, and logo/branding. I create meaningful visuals that tell stories and connect emotionally with audiences. Currently exploring embroidery patch designs for clothes, tote bags, and caps to sell via Printify.</p>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <div><strong>Graphic Designer — Creative Threads Co.</strong> <span class="small">(2021–2022, New York City)</span></div>
+            <div class="small">Produced streetwear T‑shirt graphics and brand‑aligned visual concepts. Collaborated cross‑departmentally to maintain consistent visual language.</div>
+          </div>
+          <div class="experience-item">
+            <div><strong>Personal Projects — Teeshape (Owner/Designer)</strong> <span class="small">(Ongoing)</span></div>
+            <div class="small">Designed multiple streetwear collections and portfolio pieces. Preparing embroidery-ready artwork and Printify integration for production.</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <ul>
+            <li>Teeshape — Online store for streetwear T‑shirt designs.</li>
+            <li>Embroidery Patch Series — Concept & vector artwork for patches, caps, totes (Printify pipeline).</li>
+            <li>Social Media Campaigns — Series of modern, on‑brand post templates for fictional brands.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <p class="small"><strong>Hathazari Agricultural Institute</strong> — Diploma in Agriculture (Ongoing)</p>
+        </section>
+
+        <section class="section">
+          <h2>Languages</h2>
+          <p class="small">Bengali (Native) • English (Proficient)</p>
+        </section>
+      </main>
+
+      <!-- Right (sidebar) -->
+      <aside class="card" style="background:#fbfdff;border-left:4px solid var(--accent-2);border-radius:8px">
+        <section class="section">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="pill">T‑shirt Design</span>
+            <span class="pill">Streetwear</span>
+            <span class="pill">Typography</span>
+            <span class="pill">Logo & Branding</span>
+            <span class="pill">Social Media Design</span>
+            <span class="pill">Concept Development</span>
+            <span class="pill">Adobe Illustrator</span>
+            <span class="pill">Adobe Photoshop</span>
+            <span class="pill">Figma (basic)</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Traits</h2>
+          <ul>
+            <li>Creative & detail‑oriented</li>
+            <li>Dedicated & patient</li>
+            <li>Self‑taught & continuously learning</li>
+            <li>Focused on quality & originality</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Tools</h2>
+          <div class="tools">
+            <span class="pill">Adobe Illustrator</span>
+            <span class="pill">Adobe Photoshop</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Printify (planning)</span>
+            <span class="pill">Canva</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Quote</h2>
+          <p class="small">“Design isn’t just about visuals — it’s about emotion, story, and purpose.”</p>
+        </section>
+
+        <a class="download-cta" href="#" onclick="window.print();return false">Save / Print as PDF</a>
+      </aside>
+    </div>
+
+    <footer style="margin-top:20px;text-align:center;color:var(--muted);font-size:13px">
+      Last updated: <!-- you can update this date --> <strong>Nov 12, 2025</strong>
+    </footer>
+  </div>
+</body>
+</html>
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
